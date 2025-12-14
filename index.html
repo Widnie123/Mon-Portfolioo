@@ -1,140 +1,99 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Widnie Delice | Portfolio Informatique</title>
-  
-  <link rel="stylesheet" href="style.css">
-  
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Widnie Delice | Portfolio Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-<nav class="navbar">
-  <div class="nav-container">
-    <a href="#apropos">À propos</a>
-    <a href="#competences">Compétences</a>
-    <a href="#projets">Projets</a>
-    <a href="#contact">Contact</a>
-  </div>
-</nav>
-
-  <header class="hero" id="apropos">
-    <div class="profile">
-      <img src="widnie.jpeg" alt="Widnie Delice" class="hero-photo">
-      <h1><strong>Widnie Delice</strong></h1>
-      <h2 class="subtitle">Étudiante en Informatique & Développeuse Web</h2>
-      <p class="description">
-        Passionnée par les infrastructures numériques et la création visuelle. 
-        Je combine des compétences techniques en <strong>systèmes, cloud et bases de données</strong> 
-        avec une approche créative en <strong>développement web et marketing digital</strong>.
-      </p>
-      <div class="cv-btn">
-        <a href="Mon CV.pdf" target="_blank" class="btn-cv">
-          <i class="fas fa-file-download"></i> Télécharger mon CV
-        </a>
-      </div>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
     </div>
-  </header>
 
-  <section class="competences" id="competences">
-    <div class="container">
-        <h2><i class="fas fa-terminal"></i> Expertises Techniques</h2>
-        
-        <div class="skills-grid">
-          <div class="skill-category">
-            <ul>
-                <li><i class="fas fa-tools"></i> Maintenance & Dépannage</li>
-                <li><i class="fas fa-cloud"></i> Cloud & Virtualisation</li>
-                <li><i class="fas fa-database"></i> SQL & Bases de données</li>
-                <li><i class="fas fa-palette"></i> Design & Graphisme</li>
-            </ul>
-          </div>
-
-          <div class="skills-bars">
-            <div class="skill">
-              <span>HTML5 / CSS3</span>
-              <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">WD</div>
+            <div class="links">
+                <a href="#apropos">Profil</a>
+                <a href="#competences">Skills</a>
+                <a href="#projets">Projets</a>
+                <a href="#contact" class="nav-cta">Contact</a>
             </div>
-            <div class="skill">
-              <span>JavaScript</span>
-              <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+        </div>
+    </nav>
+
+    <header class="hero" id="apropos">
+        <div class="hero-card">
+            <div class="image-container">
+                <img src="widnie.jpeg" alt="Widnie Delice" class="profile-img">
             </div>
-            <div class="skill">
-              <span>Marketing Digital</span>
-              <div class="skill-bar"><div class="skill-progress" style="width: 75%;"></div></div>
+            <div class="hero-text">
+                <span class="badge">Disponible pour de nouveaux défis</span>
+                <h1>Widnie <span>Delice</span></h1>
+                <p class="glitch-text">Développeuse Web | Experte Cloud & Systèmes</p>
+                <div class="hero-btns">
+                    <a href="Mon CV.pdf" target="_blank" class="btn-primary"><i class="fas fa-download"></i> Mon CV</a>
+                    <div class="social-mini">
+                        <a href="https://www.linkedin.com/in/widnie-delice-4016b92a9/"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-    </div>
-  </section>
+    </header>
 
-  <section class="projets" id="projets">
-    <div class="container">
-        <h2><i class="fas fa-rocket"></i> Réalisations & Projets</h2>
-        
-        <div class="projects-grid">
-          <div class="project-card">
-            <i class="fas fa-file-pdf fa-3x" style="color:#d32f2f;"></i>
-            <h3>Dossier Technique</h3>
-            <p>Analyse approfondie des systèmes et solutions cloud.</p>
-            <a href="Projettt_073603.pdf" target="_blank" class="btn-project">Consulter</a>
-          </div>
-
-          <div class="project-card">
-            <i class="fas fa-file-powerpoint fa-3x" style="color:#e53e23;"></i>
-            <h3>Stratégie Digitale</h3>
-            <p>Présentation marketing et solutions de communication.</p>
-            <a href="Presentation1.pptx" target="_blank" class="btn-project">Voir la présentation</a>
-          </div>
+    <section class="section" id="competences">
+        <div class="container">
+            <h2 class="section-title">Expertises</h2>
+            <div class="skills-wrapper">
+                <div class="skill-card">
+                    <i class="fas fa-code-branch"></i>
+                    <h3>Frontend</h3>
+                    <p>HTML5, CSS3 Moderne, JavaScript (ES6+)</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-server"></i>
+                    <h3>Infrastructure</h3>
+                    <p>Cloud, Virtualisation, Réseaux & Maintenance</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Backend</h3>
+                    <p>Gestion SQL, PHP, Architecture de données</p>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="dclic-section">
-            <h3><i class="fas fa-graduation-cap"></i> Travaux Certifiants (D-CLIC)</h3>
-            <ul class="dclic-list">
-                <li><a href="..." target="_blank">Architecture de l'information (Carte Mentale)</a></li>
-                <li><a href="..." target="_blank">Fondamentaux des langages de programmation</a></li>
-                <li><a href="..." target="_blank">Intégration Web Responsive (CSS)</a></li>
-                <li><a href="..." target="_blank">Algorithmique et Logique de programmation</a></li>
-                <li><a href="..." target="_blank">Développement Frontend Dynamique (JS)</a></li>
-            </ul>
+    <section class="section" id="projets">
+        <div class="container">
+            <h2 class="section-title">Mes Réalisations</h2>
+            <div class="project-grid">
+                <div class="glass-card project">
+                    <div class="project-icon"><i class="fas fa-project-diagram"></i></div>
+                    <h3>Dossier Technique Cloud</h3>
+                    <p>Architecture et mise en place de solutions virtuelles sécurisées.</p>
+                    <a href="Projettt_073603.pdf" class="project-link">Découvrir <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="glass-card project">
+                    <div class="project-icon"><i class="fas fa-bullhorn"></i></div>
+                    <h3>Marketing & Design</h3>
+                    <p>Création d'identité visuelle et stratégie digitale innovante.</p>
+                    <a href="Presentation1.pptx" class="project-link">Voir le PPTX <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
         </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="contact" id="contact">
-    <div class="container">
-        <h2><i class="fas fa-paper-plane"></i> Me Contacter</h2>
-        <p>Une question ou un projet ? Écrivez-moi directement !</p>
-        <form id="contactForm">
-            <input type="text" placeholder="Votre Nom" required>
-            <input type="email" placeholder="Votre Email" required>
-            <textarea placeholder="Votre Message" rows="5" required></textarea>
-            <button type="submit" class="btn-submit">Envoyer le message</button>
-        </form>
-    </div>
-  </section>
+    <footer class="footer">
+        <p>© 2025 Widnie Delice — Créé avec passion</p>
+    </footer>
 
-  <footer class="footer">
-    <div class="footer-content">
-        <div class="info">
-            <p><i class="fas fa-map-marker-alt"></i> Puits-blain 30, Haïti</p>
-            <p><i class="fas fa-envelope"></i> widniedelice123@gmail.com</p>
-            <p><i class="fas fa-phone"></i> +509 3939-7503</p>
-        </div>
-        
-        <div class="social-links">
-          <a href="https://www.linkedin.com/in/widnie-delice-4016b92a9/" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="https://www.instagram.com/widniedelice/" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.facebook.com/carla.delia.50" target="_blank"><i class="fab fa-facebook"></i></a>
-        </div>
-    </div>
-    <p class="rights">© 2025 Widnie Delice – Tous droits réservés.</p>
-  </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
