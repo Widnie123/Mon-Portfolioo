@@ -1,42 +1,60 @@
-// Compteurs compétences avec pourcentage centré
-document.addEventListener("DOMContentLoaded", () => {
-  const skills = document.querySelectorAll(".skill-progress");
+document.addEventListener('DOMContentLoaded', () => {
 
-  skills.forEach(skill => {
-    const progress = parseInt(skill.getAttribute("data-progress")); // 90, 85...
-    const percent = skill.querySelector(".skill-percent");
-    
-    let count = 0;
-    skill.style.width = "0%";
+    // 1. Animation d'apparition au défilement (Scroll Reveal)
+    const observerOptions = {
+        threshold: 0.1
+    };
 
-    const interval = setInterval(() => {
-      if(count <= progress){
-        skill.style.width = count + "%";
-        percent.textContent = count + "%"; // affiche le pourcentage
-        count++;
-      } else {
-        clearInterval(interval);
-      }
-    }, 20); // vitesse de l'animation
-  });
-});
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = "1";
+                entry.target.style.transform = "translateY(0)";
+            }
+        });
+    }, observerOptions);
 
-// Alerte téléchargement CV
-document.querySelector(".cv-btn a").addEventListener("click", () => {
-  alert("Merci d’avoir téléchargé mon CV !");
-});
+    // On applique l'effet à tous les blocs Bento
+    document.querySelectorAll('.bento-item').forEach(item => {
+        item.style.opacity = "0";
+        item.style.transform = "translateY(20px)";
+        item.style.transition = "all 0.6s ease-out";
+        observer.observe(item);
+    });
 
-// Validation formulaire contact
-document.getElementById("contactForm").addEventListener("submit", function(e){
-  e.preventDefault(); // empêche le rechargement de la page
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-  const message = document.getElementById("message").value;
+    // 2. Gestion du formulaire de contact (Simulation d'envoi)
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault(); // Empêche le rechargement de la page
+            
+            const btn = contactForm.querySelector('button');
+            const originalText = btn.innerText;
+            
+            // Simulation d'un chargement
+            btn.innerText = "Envoi en cours...";
+            btn.disabled = true;
 
-  if(name && email && message){
-    alert(`Merci ${name} ! Votre message a été envoyé.`);
-    this.reset(); // réinitialise le formulaire
-  } else {
-    alert("Veuillez remplir tous les champs !");
-  }
+            setTimeout(() => {
+                alert("Merci Widnie a bien reçu votre message ! (Ceci est une démo)");
+                btn.innerText = originalText;
+                btn.disabled = false;
+                contactForm.reset();
+            }, 1500);
+        });
+    }
+
+    // 3. Smooth Scroll pour les liens de navigation
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
 });
