@@ -1,3 +1,4 @@
+// Attendre que le contenu soit chargé
 document.addEventListener('DOMContentLoaded', () => {
 
     // 1. Animation d'apparition au défilement (Scroll Reveal)
@@ -14,37 +15,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
-    // On applique l'effet à tous les blocs Bento
-    document.querySelectorAll('.bento-item').forEach(item => {
-        item.style.opacity = "0";
-        item.style.transform = "translateY(20px)";
-        item.style.transition = "all 0.6s ease-out";
-        observer.observe(item);
+    // On applique l'effet aux cartes et à la section profil
+    const elementsToAnimate = document.querySelectorAll('.card, .profile-desc, .contact-card');
+    
+    elementsToAnimate.forEach(el => {
+        el.style.opacity = "0";
+        el.style.transform = "translateY(30px)";
+        el.style.transition = "all 0.8s ease-out";
+        observer.observe(el);
     });
 
-    // 2. Gestion du formulaire de contact (Simulation d'envoi)
-    const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault(); // Empêche le rechargement de la page
-            
-            const btn = contactForm.querySelector('button');
-            const originalText = btn.innerText;
-            
-            // Simulation d'un chargement
-            btn.innerText = "Envoi en cours...";
-            btn.disabled = true;
-
-            setTimeout(() => {
-                alert("Merci Widnie a bien reçu votre message ! (Ceci est une démo)");
-                btn.innerText = originalText;
-                btn.disabled = false;
-                contactForm.reset();
-            }, 1500);
-        });
-    }
-
-    // 3. Smooth Scroll pour les liens de navigation
+    // 2. Navigation fluide pour les liens du menu
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -57,4 +38,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // 3. Effet subtil sur le bouton CV au survol
+    const btnCv = document.querySelector('.btn-cv');
+    if (btnCv) {
+        btnCv.addEventListener('mouseover', () => {
+            btnCv.style.letterSpacing = "2px";
+        });
+        btnCv.addEventListener('mouseout', () => {
+            btnCv.style.letterSpacing = "normal";
+        });
+    }
+
+    console.log("Le portfolio de Widnie est prêt et animé !");
 });

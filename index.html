@@ -3,77 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Widnie Delice | Portfolio Tech</title>
+    <title>Widnie Delice | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
     <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">WIDNIE<span>.</span></div>
-            <div class="nav-links">
-                <a href="#projets">Projets</a>
-                <a href="#contact" class="nav-cta">Contact</a>
-            </div>
+        <div class="logo">MON PORTFOLIO</div>
+        <div class="nav-links">
+            <a href="#profil">Profil</a>
+            <a href="#certificats">Certifications</a>
+            <a href="#contact">Contact</a>
         </div>
     </nav>
 
-    <main class="bento-grid container">
-        <section class="bento-item profile-box">
-            <div class="badge">Disponible pour opportunités</div>
-            <h1>Étudiante en <span>Informatique</span> & Développeuse.</h1>
-            <p>Je conçois des solutions web et gère des infrastructures cloud avec une approche axée sur la performance et le design.</p>
-            <div class="profile-actions">
-                <a href="Mon CV.pdf" target="_blank" class="btn-main">Voir le CV <i class="fas fa-arrow-right"></i></a>
+    <header class="hero">
+        <div class="container hero-flex">
+            <div class="hero-image">
+                <img src="Ma photo.jpeg" alt="Widnie Delice">
             </div>
-        </section>
-
-        <section class="bento-item photo-box">
-            <img src="widnie.jpeg" alt="Widnie Delice">
-        </section>
-
-        <section class="bento-item skill-box">
-            <i class="fas fa-cloud"></i>
-            <h3>Infrastructure</h3>
-            <p>Cloud, Virtualisation & Systèmes.</p>
-        </section>
-
-        <section class="bento-item skill-box">
-            <i class="fas fa-code"></i>
-            <h3>Web Stack</h3>
-            <p>HTML, CSS, JavaScript & PHP.</p>
-        </section>
-
-        <section class="bento-item projects-box" id="projets">
-            <h2>Réalisations</h2>
-            <div class="project-entry">
-                <a href="Projettt_073603.pdf" target="_blank">
-                    <span>Dossier Technique Cloud</span>
-                    <i class="fas fa-chevron-right"></i>
-                </a>
+            <div class="hero-text">
+                <h1 class="name">WIDNIE DELICE</h1>
+                <div class="social-icons-large">
+                    <a href="https://www.facebook.com/carla.delia.50?locale=fr_FR" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/widnie-delice-4016b92a9/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Widnie123" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+                <a href="Mon cv.pdf" class="btn-cv" target="_blank">MON CV</a>
             </div>
-            <div class="project-entry">
-                <a href="Presentation1.pptx" target="_blank">
-                    <span>Marketing & Design Visuel</span>
-                    <i class="fas fa-chevron-right"></i>
-                </a>
-            </div>
-        </section>
+        </div>
+    </header>
 
-        <section class="bento-item social-box" id="contact">
-            <h3>On reste en contact ?</h3>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/widnie-delice-4016b92a9/"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.instagram.com/widniedelice/"><i class="fab fa-instagram"></i></a>
-                <a href="mailto:widniedelice123@gmail.com"><i class="fas fa-envelope"></i></a>
-            </div>
-        </section>
-    </main>
+    <section id="profil" class="profile-section">
+        <div class="container">
+            <h2 class="section-title">MON PROFIL</h2>
+            <p class="profile-desc">
+                Je m'appelle <strong>Widnie Delice</strong>. Experte polyvalente, j'évolue à l'intersection de la <strong>Technique Informatique</strong>, du <strong>Développement Web</strong>, du <strong>Graphisme</strong> et du <strong>Marketing Digital</strong>. Formée par D-CLIC, je mets mes compétences au service de projets innovants pour créer des solutions numériques complètes, esthétiques et performantes.
+            </p>
+        </div>
+    </section>
 
-    <footer class="footer">
-        <p>© 2025 — Widnie Delice</p>
+    <section id="certificats" class="cert-section">
+        <div class="container">
+            <h2 class="section-title">MES CERTIFICATS & BADGES</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="Certificat developpement web debutant.jpg" alt="Certif">
+                    <p>Certificat Développement Web Débutant</p>
+                </div>
+                <div class="card">
+                    <img src="Certificat developpement web intermediaire.jpg" alt="Certif">
+                    <p>Certificat Développement Web Intermédiaire</p>
+                </div>
+                <div class="card">
+                    <img src="Certificat graphic design.jpg" alt="Certif">
+                    <p>Certificat Graphic Design</p>
+                </div>
+                <div class="card">
+                    <img src="Certificat Marketing digital.jpg" alt="Certif">
+                    <p>Certificat Marketing Digital</p>
+                </div>
+                <div class="card">
+                    <img src="badge1.png" alt="Badge">
+                    <p>Badge 1</p>
+                </div>
+                <div class="card">
+                    <img src="badge2.png" alt="Badge">
+                    <p>Badge 2</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-card">
+                <h2>ME CONTACTER</h2>
+                <form action="https://formspree.io/f/vwpvageq" method="POST">
+                    <input type="text" name="name" placeholder="Nom" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
+                    <button type="submit">ENVOYER</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 WIDNIE DELICE | <img src="https://visitor-badge.laobi.icu/badge?page_id=widnie123.Mon-Portfolioo" alt="Views"></p>
     </footer>
 
 </body>
