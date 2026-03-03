@@ -1,0 +1,215 @@
+/* --- VARIABLES & RESET --- */
+:root {
+    --primary-blue: #003366;    /* Bleu Institutionnel / ONU */
+    --light-blue: #007bff;      /* Bleu Innovation */
+    --dark-navy: #0a192f;       /* Fond Sidebar & Bot */
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --white: #ffffff;
+    --bg-light: #f8fafc;
+    --transition: all 0.3s ease;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-main);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+a { text-decoration: none; transition: var(--transition); }
+ul { list-style: none; }
+
+/* --- NAVIGATION --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+}
+
+.logo { font-weight: 900; font-size: 1.6rem; color: var(--primary-blue); letter-spacing: 1px; }
+.nav-links a { color: var(--text-main); font-weight: 600; margin-left: 25px; font-size: 0.95rem; }
+.nav-links a:hover, .nav-links a.active { color: var(--light-blue); }
+.btn-contact-nav { background: var(--primary-blue); color: white !important; padding: 10px 20px; border-radius: 8px; }
+
+/* --- HERO SECTION (Maquette Widnie) --- */
+.hero { padding: 80px 0; background: white; }
+.hero-flex { display: flex; align-items: center; justify-content: space-between; gap: 50px; position: relative; }
+
+.hero-text { flex: 1.2; }
+.name { font-size: 4.2rem; font-weight: 900; color: var(--primary-blue); line-height: 1; margin-bottom: 10px; }
+.professional-title { font-size: 1.5rem; color: var(--light-blue); border-bottom: 4px solid var(--light-blue); display: inline-block; margin-bottom: 25px; padding-bottom: 5px; }
+.hero-description { font-size: 1.15rem; color: var(--text-muted); margin-bottom: 35px; max-width: 600px; }
+
+.hero-btns { display: flex; gap: 15px; }
+.btn-primary { background: var(--primary-blue); color: white; padding: 15px 30px; border-radius: 10px; font-weight: 700; }
+.btn-secondary { border: 2px solid var(--primary-blue); color: var(--primary-blue); padding: 13px 28px; border-radius: 10px; font-weight: 700; }
+.btn-primary:hover { background: var(--light-blue); transform: translateY(-3px); }
+
+/* PHOTO & SIDEBAR SKILLS */
+.photo-container { flex: 1; position: relative; }
+.profile-img { 
+    width: 100%; 
+    max-width: 420px; 
+    height: 500px; 
+    object-fit: cover; 
+    border-radius: 30px; 
+    box-shadow: 20px 20px 0 var(--primary-blue); 
+}
+
+.skills-sidebar { 
+    position: absolute; 
+    bottom: -30px; 
+    right: -40px; 
+    background: var(--dark-navy); 
+    color: white; 
+    padding: 25px; 
+    border-radius: 20px; 
+    width: 280px; 
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3); 
+}
+
+.skills-sidebar h3 { font-size: 0.8rem; letter-spacing: 2px; color: var(--light-blue); margin-bottom: 15px; border-bottom: 1px solid #1e293b; padding-bottom: 10px; }
+.skill-item h4 { font-size: 0.9rem; margin: 12px 0 5px; color: #fff; }
+.skill-item p { font-size: 0.85rem; color: #94a3b8; line-height: 1.4; }
+
+/* --- SERVICES SECTION --- */
+.services-section { padding: 100px 0; background: var(--bg-light); }
+.section-title { text-align: center; font-size: 2.5rem; color: var(--primary-blue); margin-bottom: 50px; font-weight: 900; }
+
+.services-list { display: grid; gap: 25px; }
+.service-row { 
+    background: white; 
+    display: flex; 
+    align-items: center; 
+    padding: 30px; 
+    border-radius: 20px; 
+    box-shadow: 0 5px 20px rgba(0,0,0,0.03); 
+    transition: var(--transition);
+}
+.service-row:hover { transform: scale(1.02); box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+
+.service-icon { 
+    font-size: 2.5rem; 
+    color: var(--light-blue); 
+    margin-right: 30px; 
+    background: #f0f7ff; 
+    padding: 20px; 
+    border-radius: 15px; 
+}
+
+.service-info h3 { font-size: 1.4rem; color: var(--primary-blue); margin-bottom: 8px; }
+.service-info p { color: var(--text-muted); font-size: 1rem; }
+
+/* --- CONTACT SECTION --- */
+.contact-section { padding: 100px 0; }
+.contact-card { 
+    background: var(--primary-blue); 
+    padding: 60px; 
+    border-radius: 40px; 
+    color: white; 
+    max-width: 800px; 
+    margin: 0 auto; 
+    text-align: center; 
+}
+
+.contact-card h2 { font-size: 2.5rem; margin-bottom: 30px; font-weight: 900; }
+.contact-card input, .contact-card textarea { 
+    width: 100%; 
+    padding: 18px; 
+    margin-bottom: 15px; 
+    border-radius: 12px; 
+    border: none; 
+    font-size: 1rem; 
+}
+
+.contact-card button { 
+    width: 100%; 
+    padding: 18px; 
+    background: var(--light-blue); 
+    color: white; 
+    border: none; 
+    border-radius: 12px; 
+    font-weight: 900; 
+    font-size: 1.1rem; 
+    cursor: pointer; 
+}
+
+/* --- CHATBOT WIDNIE --- */
+.bot-fab { 
+    position: fixed; 
+    bottom: 30px; 
+    right: 30px; 
+    background: var(--light-blue); 
+    color: white; 
+    width: 65px; 
+    height: 65px; 
+    border-radius: 50%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-size: 1.8rem; 
+    cursor: pointer; 
+    box-shadow: 0 10px 25px rgba(0,123,255,0.4); 
+    z-index: 1001;
+    transition: var(--transition);
+}
+
+.bot-window { 
+    position: fixed; 
+    bottom: 110px; 
+    right: 30px; 
+    width: 350px; 
+    background: white; 
+    border-radius: 20px; 
+    box-shadow: 0 15px 50px rgba(0,0,0,0.2); 
+    z-index: 1001; 
+    overflow: hidden;
+    transition: var(--transition);
+    transform-origin: bottom right;
+}
+
+.bot-hidden { transform: scale(0); opacity: 0; pointer-events: none; }
+
+.bot-header { background: var(--dark-navy); color: white; padding: 20px; display: flex; align-items: center; gap: 15px; }
+.bot-avatar { width: 40px; height: 40px; border-radius: 50%; border: 2px solid var(--light-blue); }
+
+.bot-messages { padding: 20px; max-height: 300px; overflow-y: auto; }
+.bot-msg { background: #f1f5f9; padding: 12px 15px; border-radius: 15px; margin-bottom: 10px; font-size: 0.9rem; width: fit-content; }
+
+.bot-options { padding: 10px 20px 20px; display: flex; flex-direction: column; gap: 8px; }
+.bot-btn { 
+    background: #f0f7ff; 
+    border: 1px solid var(--light-blue); 
+    color: var(--light-blue); 
+    padding: 10px; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    font-size: 0.85rem; 
+    font-weight: 600; 
+    text-align: left;
+    transition: var(--transition);
+}
+.bot-btn:hover { background: var(--light-blue); color: white; }
+
+/* FOOTER */
+footer { text-align: center; padding: 40px; color: var(--text-muted); font-size: 0.9rem; }
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    .hero-flex { flex-direction: column; text-align: center; }
+    .hero-btns { justify-content: center; }
+    .skills-sidebar { position: static; width: 100%; margin-top: 20px; }
+    .name { font-size: 3rem; }
+}

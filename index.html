@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Widnie Delice | Experte Digitale Multi-facettes</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">WIDNIE.</div>
+        <div class="nav-links">
+            <a href="index.html" class="active">Accueil</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="certificats.html">Certifications</a>
+            <a href="#contact" class="btn-contact-nav">Contact</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container hero-flex">
+            <div class="hero-text">
+                <h1 class="name">WIDNIE DELICE</h1>
+                <h2 class="professional-title">Solutions Multimédia & Innovation Digitale</h2>
+                <p class="hero-description">
+                    Professionnelle polyvalente alliant la rigueur de l'informatique à la créativité du design. Je conçois des écosystèmes numériques performants et orientés impact.
+                </p>
+                <div class="hero-btns">
+                    <a href="portfolio.html" class="btn-primary">Découvrir mes projets</a>
+                    <a href="Widnie_Delice_CV.pdf" class="btn-secondary" target="_blank">Mon CV (PDF)</a>
+                </div>
+            </div>
+
+            <div class="photo-container">
+                <img src="maphoto.png" alt="Widnie Delice" class="profile-img">
+                <div class="skills-sidebar">
+                    <h3><i class="fas fa-bars"></i> COMPÉTENCES</h3>
+                    <div class="skill-item">
+                        <h4>Techniques</h4>
+                        <p>Développement Web, Réseaux, Hardware, Support IT</p>
+                    </div>
+                    <div class="skill-item">
+                        <h4>Créatives</h4>
+                        <p>UI/UX Design, Branding, Stratégie Digitale</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2 class="section-title">Mes Expertises</h2>
+            
+            <div class="services-list">
+                <div class="service-row card">
+                    <div class="service-icon"><i class="fas fa-palette"></i></div>
+                    <div class="service-info">
+                        <h3>Graphic Design</h3>
+                        <p>Création d'identités visuelles et supports print/web. Je maîtrise <strong>Canva, CorelDraw, Adobe Photoshop, Affinity Design et Figma</strong>.</p>
+                    </div>
+                </div>
+
+                <div class="service-row card">
+                    <div class="service-icon"><i class="fas fa-code"></i></div>
+                    <div class="service-info">
+                        <h3>Développement Web (Niveau Avancé)</h3>
+                        <p>Conception de sites et applications robustes : <strong>HTML, CSS, JS, PHP, React</strong>. Intégration d'<strong>APIs</strong> et gestion de bases de données.</p>
+                    </div>
+                </div>
+
+                <div class="service-row card">
+                    <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                    <div class="service-info">
+                        <h3>Marketing Digital</h3>
+                        <p>Stratégie de contenu et optimisation de visibilité. Analyse de performance et gestion de campagnes pour booster l'engagement.</p>
+                    </div>
+                </div>
+
+                <div class="service-row card">
+                    <div class="service-icon"><i class="fas fa-laptop-medical"></i></div>
+                    <div class="service-info">
+                        <h3>Technicienne Informatique</h3>
+                        <p>Maintenance préventive, diagnostic système, gestion de réseaux et support technique professionnel pour garantir la continuité des services.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-card">
+                <h2>Me Contacter</h2>
+                <form id="my-form" action="https://formspree.io/f/mzdpyjnj" method="POST">
+                    <input type="text" name="name" placeholder="Votre nom" required>
+                    <input type="email" name="email" placeholder="Votre email" required>
+                    <textarea name="message" rows="5" placeholder="Parlez-moi de votre projet..." required></textarea>
+                    <p id="my-form-status"></p>
+                    <button type="submit" id="my-form-button">Envoyer le message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div id="widnie-bot-container">
+        <div id="bot-trigger" class="bot-fab">
+            <i class="fas fa-comment-dots"></i>
+        </div>
+        <div id="bot-window" class="bot-hidden">
+            <div class="bot-header">
+                <img src="maphoto.png" alt="Widnie Mini" class="bot-avatar">
+                <span>Assistant Widnie</span>
+            </div>
+            <div id="bot-messages" class="bot-messages">
+                </div>
+            <div id="bot-options" class="bot-options">
+                </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Widnie Delice | Experte Digitale</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
