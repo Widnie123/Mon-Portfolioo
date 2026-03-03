@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WIDNIE DELICE | Portfolio</title>
+    <title>Widnie Delice | Assistante Multimédia & Innovation Digitale</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
     <nav class="navbar">
-        <div class="logo">MON PORTFOLIO</div>
+        <div class="logo">Widnie Delice</div>
         <div class="nav-links">
             <a href="#profil">Profil</a>
+            <a href="#projets">Projets</a>
             <a href="#certificats">Certifications</a>
             <a href="#contact">Contact</a>
         </div>
@@ -22,66 +23,101 @@
     <header class="hero">
         <div class="container hero-flex">
             <div class="photo-container">
-                <div class="glow-effect"></div>
                 <img src="Ma photo.jpeg" alt="Widnie Delice" class="profile-img">
             </div>
+
             <div class="hero-text">
                 <h1 class="name">WIDNIE DELICE</h1>
-                <h2 class="professional-title">Technique Informatique | Développement Web | Graphisme | Marketing Digital</h2>
+                <h2 class="professional-title">
+                    Assistante Multimédia & Innovation Digitale
+                </h2>
+
+                <p class="hero-description">
+                    Conception et déploiement de solutions numériques structurées 
+                    au service de la communication, de l'innovation et des environnements institutionnels.
+                </p>
+
                 <div class="social-icons-large">
-                    <a href="https://www.facebook.com/carla.delia.50?locale=fr_FR" target="_blank"><i class="fab fa-facebook"></i></a>
                     <a href="https://www.linkedin.com/in/widnie-delice-4016b92a9/" target="_blank"><i class="fab fa-linkedin"></i></a>
                     <a href="https://github.com/Widnie123" target="_blank"><i class="fab fa-github"></i></a>
                 </div>
-                <a href="Mon cv.jpeg" class="btn-cv" target="_blank">MON CV</a>
+
+                <a href="Widnie_Delice_CV.pdf" class="btn-cv" target="_blank">
+                    Télécharger le CV
+                </a>
             </div>
         </div>
     </header>
 
+    <!-- PROFIL -->
     <section id="profil">
         <div class="container">
-            <h2 class="section-title">MON PROFIL</h2>
+            <h2 class="section-title">Profil Professionnel</h2>
             <div class="profile-card">
                 <p class="profile-desc">
-                    Je m'appelle <strong>Widnie Delice</strong>. Experte polyvalente, j'évolue à l'intersection de la <strong>Technique Informatique</strong>, du <strong>Développement Web</strong>, du <strong>Graphisme</strong> et du <strong>Marketing Digital</strong>. Formée par D-CLIC, je mets mes compétences au service de projets innovants.
+                    Technicienne en informatique spécialisée en solutions multimédia et innovation digitale. 
+                    Expérience en développement web, conception graphique et communication numérique. 
+                    Capacité à travailler dans des environnements structurés, orientés performance et résultats.
                 </p>
             </div>
         </div>
     </section>
 
-    <section id="certificats">
+    <!-- PROJETS -->
+    <section id="projets">
         <div class="container">
-            <h2 class="section-title">MES CERTIFICATS & BADGES</h2>
+            <h2 class="section-title">Projets Réalisés</h2>
+
             <div class="grid">
-                <div class="card"><img src="Certificat développement web débutant.jpeg" alt="Certificat"><p>Développement Web Débutant</p></div>
-                <div class="card"><img src="Certificat développement web intermédiaire.jpeg" alt="Certificat"><p>Développement Web Intermédiaire</p></div>
-                <div class="card"><img src="Certificat graphic design.jpeg" alt="Certificat"><p>Graphic Design</p></div>
-                <div class="card"><img src="Certificat Marketing digital.jpeg" alt="Certificat"><p>Marketing Digital</p></div>
-                <div class="card"><img src="badge1.png" alt="Badge"><p>Badge 1</p></div>
-                <div class="card"><img src="badge2..png" alt="Badge"><p>Badge 2</p></div>
+                <div class="card">
+                    <h3>Bibliothèque Numérique</h3>
+                    <p>Site web dynamique pour la gestion de ressources numériques. HTML, CSS, PHP.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Campagne Marketing Digital</h3>
+                    <p>Stratégie de communication, création visuelle et optimisation de présence en ligne.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Plateforme E-learning</h3>
+                    <p>Conception UX/UI d'une plateforme éducative interactive.</p>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- CERTIFICATS -->
+    <section id="certificats">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="grid">
+                <div class="card"><img src="Certificat développement web débutant.jpeg" alt="Certificat"><p>Développement Web</p></div>
+                <div class="card"><img src="Certificat graphic design.jpeg" alt="Certificat"><p>Graphic Design</p></div>
+                <div class="card"><img src="Certificat Marketing digital.jpeg" alt="Certificat"><p>Marketing Digital</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
     <section id="contact">
         <div class="container">
             <div class="contact-card">
-                <h2>ME CONTACTER</h2>
+                <h2>Contact</h2>
                 <form id="my-form" action="https://formspree.io/f/mzdpyjnj" method="POST">
                     <input type="text" name="_gotcha" style="display:none">
                     <input type="text" name="name" placeholder="Nom complet" required>
-                    <input type="email" name="email" placeholder="Votre Email" required>
+                    <input type="email" name="email" placeholder="Email professionnel" required>
                     <textarea name="message" placeholder="Votre message..." rows="5" required></textarea>
                     
-                    <button id="my-form-button" type="submit">ENVOYER LE MESSAGE</button>
-                    <p id="my-form-status"></p>
+                    <button type="submit">Envoyer</button>
                 </form>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>© 2025 WIDNIE DELICE | <img src="https://visitor-badge.laobi.icu/badge?page_id=widnie123.Mon-Portfolioo" alt="Views"></p>
+        <p>© 2025 Widnie Delice | Portfolio Professionnel</p>
     </footer>
 
     <script src="script.js"></script>
