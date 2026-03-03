@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Widnie Delice</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">WIDNIE.</div>
+  <div class="nav-links">
+    <a href="index.html">Accueil</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="certificats.html">Certifications</a>
+    <a href="contact.html" class="active">Contact</a>
+  </div>
+</nav>
+
+<section class="contact-page">
+  <div class="container">
+    <div class="contact-card">
+      <h2>Travaillons ensemble</h2>
+      <p class="contact-subtitle">
+        Décris ton projet. Je te réponds rapidement.
+      </p>
+
+      <form id="contact-form">
+        <div class="form-group">
+          <label>Nom complet</label>
+          <input type="text" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label>Type de service</label>
+          <select name="service" required>
+            <option value="">Choisir un service</option>
+            <option>Graphic Design</option>
+            <option>Développement Web & App</option>
+            <option>Marketing Digital</option>
+            <option>Support Informatique</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Message</label>
+          <textarea name="message" rows="5" required></textarea>
+        </div>
+
+        <p id="form-status"></p>
+
+        <button type="submit" class="btn-primary">Envoyer le message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Widnie Delice | Design & Code</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,120 +1,73 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Widnie Delice | Experte Digitale</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
+<section id="services" class="services-section">
+    <div class="container">
+        <h2 class="section-title">Domaines d’Expertise</h2>
 
-    <nav class="navbar">
-        <div class="logo">WIDNIE.</div>
-        <div class="nav-links">
-            <a href="index.html" class="active">Accueil</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="certificats.html">Certifications</a>
-            <a href="#contact" class="btn-contact-nav">Contact</a>
-        </div>
-    </nav>
+        <div class="services-list">
 
-    <header class="hero">
-        <div class="container hero-flex">
-            <div class="hero-text">
-                <h1 class="name">WIDNIE DELICE</h1>
-                <h2 class="professional-title">Expertise Digitale & Innovation</h2>
-                <p class="hero-description">
-                    Professionnelle polyvalente alliant la rigueur de l'informatique à la créativité du design. Je conçois des écosystèmes numériques performants et orientés impact.
-                </p>
-                <div class="hero-btns">
-                    <a href="portfolio.html" class="btn-primary">Voir mes projets</a>
-                    <a href="Widnie_Delice_CV.pdf" class="btn-secondary" target="_blank">Mon CV</a>
+            <div class="service-row card">
+                <img src="icon-design.png" alt="Graphic Design" class="service-mini-img">
+                <div class="service-info">
+                    <h3>Graphic Design & Branding</h3>
+                    <p>
+                        Création d’identités visuelles stratégiques et supports professionnels.
+                    </p>
+                    <ul class="service-details">
+                        <li>Branding & Logos</li>
+                        <li>Charte graphique</li>
+                        <li>Supports marketing</li>
+                        <li>UI Design</li>
+                    </ul>
                 </div>
             </div>
 
-            <div class="photo-container">
-                <img src="monde.png" alt="Monde Innovation" class="world-bg-img">
-                <img src="maphoto.png" alt="Widnie Delice" class="profile-img">
-                
-                <div class="skills-sidebar">
-                    <h3><i class="fas fa-bars"></i> COMPÉTENCES</h3>
-                    <div class="skill-item">
-                        <h4>Techniques</h4>
-                        <p>Développement Web, Réseaux, Hardware, Support IT</p>
-                    </div>
-                    <div class="skill-item">
-                        <h4>Créatives</h4>
-                        <p>UI/UX Design, Branding, Stratégie Digitale</p>
-                    </div>
+            <div class="service-row card">
+                <img src="icon-dev.png" alt="Développement Web" class="service-mini-img">
+                <div class="service-info">
+                    <h3>Développement Web & Applications</h3>
+                    <p>
+                        Conception de plateformes performantes et évolutives.
+                    </p>
+                    <ul class="service-details">
+                        <li>HTML, CSS, JavaScript</li>
+                        <li>PHP Backend</li>
+                        <li>React Apps</li>
+                        <li>Intégration API</li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </header>
 
-    <section id="services" class="services-section">
-        <div class="container">
-            <h2 class="section-title">Mes Services</h2>
-            <div class="services-list">
-                <div class="service-row card">
-                    <img src="icon-design.png" alt="Design" class="service-mini-img">
-                    <div class="service-info">
-                        <h3>Graphic Design</h3>
-                        <p>Identités visuelles et supports print/web. Maîtrise de <strong>Canva, Corel, Photoshop, Affinity et Figma</strong>.</p>
-                    </div>
-                </div>
-                <div class="service-row card">
-                    <img src="icon-dev.png" alt="Dev" class="service-mini-img">
-                    <div class="service-info">
-                        <h3>Développement Web & Apps</h3>
-                        <p>Niveau avancé : <strong>HTML, CSS, JS, PHP, React</strong>. Intégration d'<strong>APIs</strong>.</p>
-                    </div>
-                </div>
-                <div class="service-row card">
-                    <img src="icon-marketing.png" alt="Marketing" class="service-mini-img">
-                    <div class="service-info">
-                        <h3>Marketing Digital</h3>
-                        <p>Stratégie de contenu, visibilité et analyse de performance pour booster votre présence en ligne.</p>
-                    </div>
-                </div>
-                <div class="service-row card">
-                    <img src="icon-tech.png" alt="Tech" class="service-mini-img">
-                    <div class="service-info">
-                        <h3>Technicienne Informatique</h3>
-                        <p>Maintenance, diagnostic système et gestion de réseaux pour une infrastructure stable.</p>
-                    </div>
+            <div class="service-row card">
+                <img src="icon-marketing.png" alt="Marketing Digital" class="service-mini-img">
+                <div class="service-info">
+                    <h3>Marketing Digital</h3>
+                    <p>
+                        Stratégie et visibilité orientées performance.
+                    </p>
+                    <ul class="service-details">
+                        <li>Content Strategy</li>
+                        <li>Funnel Marketing</li>
+                        <li>Analyse KPI</li>
+                        <li>Optimisation visibilité</li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <div class="contact-card">
-                <h2>Me Contacter</h2>
-                <form id="my-form" action="https://formspree.io/f/mzdpyjnj" method="POST">
-                    <input type="text" name="name" placeholder="Nom complet" required>
-                    <input type="email" name="email" placeholder="Email" required>
-                    <textarea name="message" rows="5" placeholder="Votre projet..." required></textarea>
-                    <p id="my-form-status"></p>
-                    <button type="submit" id="my-form-button">Envoyer le message</button>
-                </form>
+            <div class="service-row card">
+                <img src="icon-tech.png" alt="Technicienne IT" class="service-mini-img">
+                <div class="service-info">
+                    <h3>Support & Maintenance IT</h3>
+                    <p>
+                        Diagnostic et optimisation des infrastructures.
+                    </p>
+                    <ul class="service-details">
+                        <li>Maintenance système</li>
+                        <li>Installation OS</li>
+                        <li>Réseaux</li>
+                        <li>Optimisation PC</li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </section>
 
-    <div id="bot-trigger" class="bot-fab"><i class="fas fa-comment-dots"></i></div>
-    <div id="bot-window" class="bot-hidden">
-        <div class="bot-header">
-            <img src="maphoto.png" alt="Widnie Mini" class="bot-avatar">
-            <span>Assistant Widnie</span>
         </div>
-        <div id="bot-messages" class="bot-messages"></div>
-        <div id="bot-options" class="bot-options"></div>
     </div>
-
-    <footer><p>© 2026 Widnie Delice | Design & Code</p></footer>
-    <script src="script.js"></script>
-</body>
-</html>
+</section>

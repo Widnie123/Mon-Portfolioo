@@ -6,82 +6,130 @@
     <title>Portfolio | Widnie Delice</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="logo">WIDNIE.</div>
-        <div class="nav-links">
-            <a href="index.html">Accueil</a>
-            <a href="portfolio.html" class="active">Portfolio</a>
-            <a href="certificats.html">Certifications</a>
-            <a href="index.html#contact" class="btn-contact-nav">Contact</a>
+<!-- ===============================
+     NAVBAR
+================================= -->
+<nav class="navbar">
+    <div class="logo">WIDNIE.</div>
+    <div class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="portfolio.html" class="active">Portfolio</a>
+        <a href="certificats.html">Certifications</a>
+        <a href="contact.html" class="btn-contact-nav">Contact</a>
+    </div>
+</nav>
+
+<!-- ===============================
+     HEADER
+================================= -->
+<header class="page-header">
+    <div class="container">
+        <h1>Mes Réalisations</h1>
+        <p>Design stratégique, développement avancé et solutions digitales orientées performance.</p>
+    </div>
+</header>
+
+<!-- ===============================
+     PORTFOLIO GRID
+================================= -->
+<main class="container">
+    <div class="portfolio-grid">
+
+        <!-- Projet 1 -->
+        <div class="project-card">
+            <div class="project-img-wrapper">
+                <img src="projet-bibliotheque.jpg" alt="Bibliothèque Numérique">
+                <div class="project-tag">Web Development</div>
+            </div>
+            <div class="project-content">
+                <h3>Bibliothèque Numérique</h3>
+                <p>
+                    Plateforme complète de gestion de livres avec authentification,
+                    gestion base de données et interface optimisée.
+                </p>
+                <div class="project-stack">
+                    HTML • CSS • PHP • SQL
+                </div>
+            </div>
         </div>
-    </nav>
 
-    <header class="page-header">
-        <div class="container">
-            <h1>Mes Réalisations</h1>
-            <p>Découvrez mes projets en design, développement et stratégie digitale.</p>
+        <!-- Projet 2 -->
+        <div class="project-card">
+            <div class="project-img-wrapper">
+                <img src="projet-branding.jpg" alt="Identité Visuelle">
+                <div class="project-tag">Graphic Design</div>
+            </div>
+            <div class="project-content">
+                <h3>Identité Visuelle & Branding</h3>
+                <p>
+                    Création de logos et charte graphique complète pour une marque locale.
+                    Déclinaison print et digital.
+                </p>
+                <div class="project-stack">
+                    Photoshop • CorelDraw • Figma
+                </div>
+            </div>
         </div>
-    </header>
 
-    <main class="container">
-        <div class="portfolio-grid">
-            
-            <div class="project-card">
-                <div class="project-img-wrapper">
-                    <img src="projet-bibliotheque.jpg" alt="Bibliothèque Numérique">
-                    <div class="project-tag">Web Dev</div>
-                </div>
-                <div class="project-content">
-                    <h3>Bibliothèque Numérique</h3>
-                    <p>Développement complet d'une plateforme de gestion de livres (HTML, PHP, SQL).</p>
+        <!-- Projet 3 -->
+        <div class="project-card">
+            <div class="project-img-wrapper">
+                <img src="projet-app.jpg" alt="Application React">
+                <div class="project-tag">Application React</div>
+            </div>
+            <div class="project-content">
+                <h3>Application de Services</h3>
+                <p>
+                    Interface interactive développée avec React,
+                    intégration API et optimisation performance.
+                </p>
+                <div class="project-stack">
+                    React • JavaScript • REST API
                 </div>
             </div>
-
-            <div class="project-card">
-                <div class="project-img-wrapper">
-                    <img src="projet-branding.jpg" alt="Branding Design">
-                    <div class="project-tag">Graphic Design</div>
-                </div>
-                <div class="project-content">
-                    <h3>Identité Visuelle</h3>
-                    <p>Création de logos et charte graphique sur CorelDraw et Photoshop.</p>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-img-wrapper">
-                    <img src="projet-app.jpg" alt="Application Web">
-                    <div class="project-tag">App Dev</div>
-                </div>
-                <div class="project-content">
-                    <h3>Application de Services</h3>
-                    <p>Interface interactive développée avec React et intégration d'APIs.</p>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-img-wrapper">
-                    <img src="projet-marketing.jpg" alt="Marketing">
-                    <div class="project-tag">Marketing</div>
-                </div>
-                <div class="project-content">
-                    <h3>Campagne Social Media</h3>
-                    <p>Stratégie de contenu et visuels publicitaires pour booster l'engagement.</p>
-                </div>
-            </div>
-
         </div>
-    </main>
 
-    <div id="bot-trigger" class="bot-fab"><i class="fas fa-comment-dots"></i></div>
+        <!-- Projet 4 -->
+        <div class="project-card">
+            <div class="project-img-wrapper">
+                <img src="projet-marketing.jpg" alt="Campagne Marketing">
+                <div class="project-tag">Marketing Digital</div>
+            </div>
+            <div class="project-content">
+                <h3>Campagne Social Media</h3>
+                <p>
+                    Stratégie de contenu, visuels publicitaires et analyse KPI
+                    pour augmenter l’engagement et la visibilité.
+                </p>
+                <div class="project-stack">
+                    Content Strategy • Analytics • Branding
+                </div>
+            </div>
+        </div>
 
-    <footer>
-        <p>© 2026 Widnie Delice | Experte Multimédia</p>
-    </footer>
+    </div>
+</main>
+
+<!-- ===============================
+     CTA SECTION
+================================= -->
+<section class="portfolio-cta">
+    <div class="container">
+        <h2>Un projet en tête ?</h2>
+        <p>Construisons une solution digitale performante et évolutive.</p>
+        <a href="contact.html" class="btn-primary">Discuter de mon projet</a>
+    </div>
+</section>
+
+<!-- ===============================
+     FOOTER
+================================= -->
+<footer>
+    <p>© 2026 Widnie Delice | Profil Hybride IT & Digital</p>
+</footer>
 
 </body>
 </html>
