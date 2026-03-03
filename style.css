@@ -213,3 +213,95 @@ footer { text-align: center; padding: 40px; color: var(--text-muted); font-size:
     .skills-sidebar { position: static; width: 100%; margin-top: 20px; }
     .name { font-size: 3rem; }
 }
+/* --- STYLES SPECIFIQUES POUR LA PAGE CERTIFICATS --- */
+
+.page-header { 
+    background: var(--primary); 
+    color: white; 
+    padding: 60px 0; 
+    text-align: center; 
+    margin-bottom: 50px; 
+}
+
+.cert-block { 
+    background: white; 
+    border-radius: 20px; 
+    padding: 30px; 
+    margin-bottom: 40px; 
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05); 
+}
+
+.cert-header { 
+    display: flex; 
+    align-items: center; 
+    gap: 15px; 
+    margin-bottom: 25px; 
+    color: var(--primary); 
+    border-bottom: 2px solid #f1f5f9; 
+    padding-bottom: 15px; 
+}
+
+.cert-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px; 
+}
+
+.cert-card-item { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 25px; 
+    background: #f8fafc; 
+    border: 1px dashed #cbd5e1; 
+    border-radius: 15px; 
+    color: var(--primary); 
+    font-weight: 700; 
+    transition: var(--transition);
+}
+
+.cert-card-item i { 
+    font-size: 2.5rem; 
+    margin-bottom: 10px; 
+    color: #ef4444; /* Rouge pour l'icône PDF */
+}
+
+.cert-card-item:hover { 
+    background: #f1f5f9; 
+    border-style: solid; 
+    transform: translateY(-5px); 
+    color: var(--accent);
+}
+
+.badges-container { 
+    margin-top: 30px; 
+    text-align: center; 
+    padding-top: 20px;
+    border-top: 1px solid #f1f5f9;
+}
+
+.badges-flex { 
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+    margin-top: 15px;
+}
+
+.badge-img { 
+    width: 80px; 
+    height: 80px; 
+    object-fit: contain; 
+    transition: 0.3s; 
+}
+
+.badge-img:hover { 
+    transform: scale(1.1) rotate(5deg); 
+}
+
+/* Ajustement pour les mobiles */
+@media (max-width: 768px) {
+    .cert-grid { grid-template-columns: 1fr; }
+    .page-header h1 { font-size: 2rem; }
+}
